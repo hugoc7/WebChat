@@ -1,0 +1,21 @@
+@back_HostAddress = http://localhost:5056
+
+###
+
+GET {{back_HostAddress}}/conversation/
+Accept: application/json
+
+###
+
+POST {{back_HostAddress}}/conversation/
+Content-type: application/json
+
+{
+    "Date": "2026-05-01T14:30:00",
+
+    "Id": 0,
+
+    "Author": "Bot 1",
+
+    "Content": "Bonjour, je suis un bot !"
+}
