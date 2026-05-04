@@ -7,8 +7,8 @@ namespace back.Controllers;
 public class ConversationController : ControllerBase
 {
     private static List<ChatMessage> Messages = new List<ChatMessage>{
-        new () {Author="Hugo", Content="hey les gens"},
-        new () {Author="Jean", Content="coucou :) ca va ?"}
+        new () {Author="Hugo", Content="hey les gens", Id=1},
+        new () {Author="Jean", Content="coucou :) ca va ?", Id=2}
     };
 
     [HttpGet(Name = "GetConversation")]

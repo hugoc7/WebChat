@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 })
 export class Conversation {
   apiService = inject(ApiService);
-  messages$: Observable<MessageModel[]> = this.apiService.getConversation$();
+  messages$: Observable<MessageModel[]> = this.apiService.getConversation();
 
     constructor()
     {
