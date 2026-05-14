@@ -1,5 +1,11 @@
-<div class="chat-input-container">
-  <span class="username-label">{{ username }}</span>
-  <input id="message" [(ngModel)]="contentInput" (keyup.enter)="onSend()" placeholder="Écrire un message…" />
-  <button (click)="onSend()">Envoyer</button>
+<div >
+  <form [formGroup]="sendMessageForm" class="chat-input-container">
+    <label class="username-label" for="username">User name :</label>
+    <input id="username" placeholder="Pierre" formControlName="username"/>
+
+    <label for="message">Message</label>
+    <input id="message" formControlName="message" placeholder="Écrire un message…" />
+
+    <button (click)="onSend()">Envoyer</button>
+  </form>
 </div>

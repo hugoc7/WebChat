@@ -1,5 +1,5 @@
 <h1>Web Chat</h1>
 <p>Salon de discussion public</p>
 
-<conversation/>
-<chat-input>
+<conversation #conv/>
+<chat-input (messageSent)="conv.reloadMessages()">

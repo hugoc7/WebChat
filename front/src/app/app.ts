@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { Conversation } from '../conversation/conversation';
 import { ChatInput } from "../chat-input/chat-input";
 
+
 @Component({
   selector: 'app-root',
   imports: [Conversation, ChatInput],
